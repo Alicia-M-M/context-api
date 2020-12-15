@@ -29,6 +29,7 @@ function App() {
       <div className="App">
         <h1>In The App Component</h1>
         <Main />
+        <Multiple />
         {/* <UserStuff />
         <AnotherComponent />
         <Multiple /> */}
