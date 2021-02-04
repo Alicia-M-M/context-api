@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 
 export default function Multiple() {
-    const [post, setPost] = useState([]);
-    const [users, setUsers] = useState([]);
+    // const [post, setPost] = useState([]);
+    // const [users, setUsers] = useState([]);
 
     const fectchData = (url1, url2) => {
         let Url1 = url1;
@@ -31,9 +31,11 @@ export default function Multiple() {
         fectchData('https://jsonplaceholder.typicode.com/posts', 'https://jsonplaceholder.typicode.com/users')
 
     }, [])
-
+ //comment out to not render - but need the return value.
     return (
-        <div>
+        <>
+
+{/*        
             <h1>Mutilple API Calls</h1>
             {post.map((item) => {
                 return (
@@ -44,7 +46,7 @@ export default function Multiple() {
                 return (
                     <h3>{item.name}</h3>
                 )
-            })} 
-        </div>
+            })}  */}
+        </>
     )
 }

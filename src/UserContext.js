@@ -40,3 +40,6 @@ export const multipleUsers = [
 
 
 export const UserContext = createContext(user, userB, multipleUsers)
+
+//first thing to do create the context createContext
+//check everything is being exported
